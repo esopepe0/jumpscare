@@ -33,7 +33,7 @@
 
 $RI = Get-Random @(1..3)
 
-$image =  "https://github.com/esopepe0/jumpscare/blob/main/jumpscare.png"
+$image =  "https://raw.githubusercontent.com/esopepe0/jumpscare/main/jumpscare.png"
 
 $i = -join($image,"?dl=1")
 
@@ -41,7 +41,7 @@ iwr $i -O $env:TMP\i.png
 
 # Download WAV file; replace link to $wav to add your own sound
 
-$wav = "https://github.com/esopepe0/jumpscare/blob/main/screamwoman.wav"
+$wav = "https://raw.githubusercontent.com/esopepe0/jumpscare/main/screamwoman.wav"
 
 $w = -join($wav,"?dl=1")
 iwr $w -O $env:TMP\s.wav
